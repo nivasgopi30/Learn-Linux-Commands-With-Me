@@ -1,0 +1,65 @@
+mkdir ---> makes a directory or folder in the present working directory
+
+cd ---> changes the present working directory to the one specified
+
+pwd ---> shows the present working directory
+
+ls ---> shows all the unhidden files in the present working directory 
+ls -a ---> shows all the hidden files including normal ones in the present working directory
+ls -l ---> shows the list of files with every single detail in the present working directory
+ls -R ---> shows all the files recursively i.e displays files in each and every sub folders 
+
+cat filename ---> displays the content in the file specified
+cat > filename ---> creates the file and allows to add the content of the file
+cat file1 file2 > file3 ---> Concatenates the contents in file1 & file2 and saves the total content into file3
+(we can add as many files we want)
+cat >> filename --->allows to write some content and appends that content at the end of the file
+
+echo some_text ---> prints the content in some_text as it is i.e whatever the content is there after echo it will simply displays the content
+
+man some_command ---> man command gives the description about the command specified
+
+tr string1 string2 ---> translates string1 into string2
+
+task1 | task2 ---> executing task2 after task1(simply piping the tasks one after another)
+
+mkdir -p f1/f2/f3 ---> makes a folder f2 in between the path of folders f1 and f3
+
+touch filename ---> creates the file specified
+
+cp file1 file2 ---> copies the content in file1 into file2
+
+mv filename foldername ---> moves the file to the folder specified
+mv old_filename new_filename ---> renames the file with new name specified
+mv old_filename path_to_which_file_should_be_moved/new_filename ---> performs both moving and renaming simultaneously
+
+rm filename ---> permanently deletes the file specified from the local system
+rm -Rf foldername ---> deletes the folder specified recursively and forcibly
+
+df -h ---> displays free disk space in a human readable format
+
+head -n number_of_lines_you_want_to_display filename ---> displays the content of no.of lines specified from starting
+
+tail -n number_of_lines_you_want_to_display filename ---> displays the content of last number of lines specified 
+
+diff file1 file2 ---> differentiates the two files specified i.e compares the content of two files
+
+find filename ---> finds whether the file specified exists in the present working directory or not
+find . -type d ---> finds only the directories/folders in the present working directory
+find . -type f ---> finds only the files in the present working directory(dot indicates present directory)
+find . -type f -name '*.txt' ---> finds all the text files in the present working directory
+find -type f -empty ---> finds all the empty files in the present working directory
+
+grep string filename ---> displays whether the string specified is in the file or not
+grep -n string filename ---> displays the line number of the string specified
+grep -inc string path/ ---> when we don't know in which file the specified string is in, then specify the path for searching.
+(Here argument -i is helpful for skipping the case sensitivity, -n is to display the line number and -c is to count number of times string has appeared)
+
+top ---> displays the processes running behind
+
+lsof ---> lists all the open files
+
+nslookup url ---> displays the ip address of the url specified
+
+cut -c 1-4 filename ---> cuts the characters specified in the range and displays it
+(Here we can give whatever the range we want in the place of 1-4)
